@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <title>Log-In</title>
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url(110588-blue-and-purple-blurred-background-vector.jpg);
+            font-family: 'Baloo 2', cursive;
+            /* background-image: url(img2.jpeg); */
+            /* background-image: url(bgImg.png); */
+            background-image: url(img.jpeg);
+            background-repeat: no-repeat;
+            /* background-color: blue; */
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 19px;
+            left: 215px;
+        }
+
+        .mid {
+            display: block;
+            width: 43%;
+            margin: 14px 475px;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 185px;
+            top: 9px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 33px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(242, 242, 242);            
+            text-decoration: none;
+            padding: 33px;
+
+        }
+
+        .getBtn {
+            margin: 14px 30px;
+            background-color: transparent;
+            border: 0.5px solid whitesmoke;
+            color: white;
+            border-radius: 20px;
+            padding: 9px 35px;
+            cursor: pointer;
+            font-family: 'Baloo 2', cursive;
+        }
+
+        .getBtn:hover {
+            /* background-color: rgb(255, 255, 128); */
+            /* border: 1px solid whitesmoke; */
+            border: 0px solid whitesmoke;
+            transition-duration: 4ms;
+            cursor: pointer;
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            background-color:rgb(242, 242, 242);
+            border-radius: 12px;
+            display: inline-block;
+            position: absolute;
+            width: 220px;
+            padding: 60px;
+            margin: 59px 55px;
+            left: 728px;
+            top: 136px;
+            height: 300px;
+            box-shadow: 2px 11px 42px 0 rgb(3 0 0), 0 22px 20px 0 rgb(0 0 0 / 19%);
+            text-align: center;
+        }
+
+        .form-group input {
+            /* text-align: center; */
+            display: block;
+            width: 178px;
+            padding: 14px;
+            cursor: pointer;
+            border: 0px solid black;
+            margin: 13px auto;
+            background-color: rgb(230, 230, 230);
+            border-radius: 10px;
+            box-shadow: 2px 11px 42px 0 rgb(242, 242, 242), 0 22px 20px 0 rgb(242, 242, 242);
+
+        }
+        .container button {
+            color: whitesmoke;
+            cursor: pointer;
+            display: inline-block;
+            width: 200px;
+            height: 36px;
+            border: 1px solid rgba(0, 102, 255, 0.836);
+            border-radius: 20px;
+            background-color: rgb(51, 133, 255);
+            box-shadow: 18px 14px 33px 0px rgb(153 194 255), 0 0px 13px 0 rgb(153 194 255);
+        }
+        .container button:hover {
+            background-color: rgb(0, 92, 230);
+            transition-duration: 2ms;
+            color: rgb(242, 242, 242);
+        }
+        .container input:hover {
+            background-color: rgb(179, 179, 179);
+        }
+        .container h3 {
+            color: black;
+            font-size: xx-large;
+            display: inline;
+            width: 33%;
+            margin: auto;
+            padding: 2px 3px;   
+        }
+        .left img {
+    display: inline-block;
+    padding: 0px;
+    margin: 3px;
+    width: 73px;
+    height: 53px;
+}
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left for name -->
+        <div class="left">
+            <img src="tree-logo.jpg" alt="">
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <!-- right for get button -->
+        <div class="right">
+            <button class="getBtn">Get Started</button>
+        </div>
+    </header>
+    <div class="container">
+        <form action="">
+            <h3>Sign Up</h3>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Age">
+            </div>
+            <div><button>Register</button></div>
+        </form>
+    </div>
+</body>
+
+</html>
