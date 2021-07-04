@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Log-In</title>
     <style>
@@ -21,7 +22,6 @@
             background-image: url(img.jpeg);
             background-image: url(https://source.unsplash.com/collection/scene/1440x800);
             background-repeat: no-repeat;
-            /* background-color: blue; */
 
         }
 
@@ -32,6 +32,7 @@
             top: 19px;
             left: 215px;
         }
+
 
         .mid {
             display: block;
@@ -66,7 +67,7 @@
         .navbar li a:hover,
         .navbar li a.active {
             text-decoration: underline;
-            color: rgb(242, 242, 242);            
+            color: rgb(242, 242, 242);
             text-decoration: none;
             padding: 33px;
 
@@ -93,8 +94,8 @@
 
         .container {
             /* border: 2px solid black; */
-            background-color:rgb(242, 242, 242);
-            border-radius: 12px;
+            background-color: rgb(242, 242, 242);
+            border-radius: 4px;
             display: inline-block;
             position: absolute;
             width: 220px;
@@ -120,6 +121,7 @@
             box-shadow: 2px 11px 42px 0 rgb(242, 242, 242), 0 22px 20px 0 rgb(242, 242, 242);
 
         }
+
         .container button {
             color: whitesmoke;
             cursor: pointer;
@@ -131,29 +133,63 @@
             background-color: rgb(51, 133, 255);
             box-shadow: 18px 14px 33px 0px rgb(153 194 255), 0 0px 13px 0 rgb(153 194 255);
         }
+
         .container button:hover {
             background-color: rgb(0, 92, 230);
             transition-duration: 2ms;
             color: rgb(242, 242, 242);
         }
+
         .container input:hover {
             background-color: rgb(179, 179, 179);
         }
+
         .container h3 {
             color: black;
             font-size: xx-large;
             display: inline;
             width: 33%;
             margin: auto;
-            padding: 2px 3px;   
+            padding: 2px 3px;
         }
+
         .left img {
-    display: inline-block;
-    padding: 0px;
-    margin: 3px;
-    width: 73px;
-    height: 53px;
-}
+            display: inline-block;
+            padding: 0px;
+            margin: 3px;
+            width: 73px;
+            height: 53px;
+        }
+
+        .containerSlog {
+            /* background-color: black; */
+            display: inline-block;
+            margin: 17px 133px;
+            padding: 12px 20px;
+            width: 531px;
+            height: 508px;
+        }
+
+
+        .containerSlog h3 {
+            font-family: 'Baloo 2', cursive;
+            font-size: 30px;
+            margin: 20px 20px;
+        }
+
+        #tagline {
+            font-family: 'Baloo 2', cursive;
+            font-size: 60px;
+            padding: 0px 0px;
+            margin: 20px 20px;
+        }
+
+        .containerSlog div {
+            font-family: 'Baloo 2', cursive;
+            font-size: 15px;
+            padding: 0px 0px;
+            margin: 20px 20px;
+        }
     </style>
 </head>
 
@@ -178,6 +214,15 @@
             <button class="getBtn">Get Started</button>
         </div>
     </header>
+    <div class="containerSlog">
+        <h3>WoodCutter</h3>
+        <div id="tagline">
+            Focus on the work that matters
+        </div>
+        <div>
+            WoodCutter is the world's smart workspace. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestias alias tempore odit laboriosam quisquam totam ex? Vel, velit nostrum suscipit ratione nulla non porro labore enim debitis? Doloribus dolorum officiis voluptas ducimus, repellendus saepe inventore maxime, magni quasi reiciendis beatae deleniti cupiditate? Nam possimus et iste obcaecati eius dignissimos?
+        </div>
+    </div>
     <div class="container">
         <form action="">
             <h3>Sign Up</h3>
@@ -193,7 +238,7 @@
             <div class="form-group">
                 <input type="number" name="" placeholder="Age">
             </div>
-            <div><button>Register</button></div>
+            <div><button type="submit">Register</button></div>
         </form>
     </div>
 </body>
