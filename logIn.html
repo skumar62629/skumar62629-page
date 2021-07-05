@@ -15,16 +15,32 @@
             color: white;
             margin: 0px;
             padding: 0px;
-            background-image: url(110588-blue-and-purple-blurred-background-vector.jpg);
+            /* background-image: url(110588-blue-and-purple-blurred-background-vector.jpg); */
+            
             font-family: 'Baloo 2', cursive;
             /* background-image: url(img2.jpeg); */
             /* background-image: url(bgImg.png); */
-            background-image: url(img.jpeg);
-            background-image: url(https://source.unsplash.com/collection/scene/1440x800);
+            /* background-image: url(img.jpeg); */
+            /* background-image: url(https://source.unsplash.com/collection/scene/1440x800); */
+            /* background-size: auto; */
             background-repeat: no-repeat;
-            background-size: auto;
+        }
+        header::before{
+            content: "";
+            background: url(https://source.unsplash.com/collection/dark/1440x800) no-repeat center center/cover;
+            /* background-image: url(img.jpeg); */
 
-
+            /* background-image: url(img2.jpeg); */
+            /* background: url(110588-blue-and-purple-blurred-background-vector.jpg) no-repeat center center/cover; */
+            
+            /* background-image: url(bgImg.png); */
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
         }
 
         .left {
@@ -108,22 +124,25 @@
             height: 300px;
             box-shadow: 2px 11px 42px 0 rgb(3 0 0), 0 22px 20px 0 rgb(0 0 0 / 19%);
             text-align: center;
+            transition: all 0.4s ease-in-out;
         }
-
+        .container:hover{
+            transform: scale(1.09);
+            cursor: pointer;
+            box-shadow: 2px 11px 42px 0px rgb(3 0 0), 0 22px 20px 20px rgb(0 0 0 / 19%);
+        }
         .form-group input {
             /* text-align: center; */
             display: block;
             width: 178px;
             padding: 14px;
-            cursor: pointer;
+            cursor: text ;
             border: 0px solid black;
             margin: 13px auto;
             background-color: rgb(230, 230, 230);
             border-radius: 10px;
             box-shadow: 2px 11px 42px 0 rgb(242, 242, 242), 0 22px 20px 0 rgb(242, 242, 242);
-
         }
-
         .container button {
             color: whitesmoke;
             cursor: pointer;
@@ -172,7 +191,6 @@
             height: 508px;
         }
 
-
         .containerSlog h3 {
             font-family: 'Baloo 2', cursive;
             font-size: 30px;
@@ -193,6 +211,7 @@
             margin: 20px 20px;
         }
     </style>
+    
 </head>
 
 <body>
@@ -229,13 +248,18 @@
         <form action="">
             <h3>Sign Up</h3>
             <div class="form-group">
-                <input type="text" name="" placeholder="Full Name">
+                <input type="text" name="" placeholder="Full Name" >
             </div>
             <div class="form-group">
                 <input type="text" name="" placeholder="Email">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Gender">
+                <!-- <input type="text" name="" placeholder="Gender"> -->
+                <input list="gender" name="gender" placeholder="Gender" autocomplete="off">
+                <datalist id="gender" >
+                    <option value="Male"></option>
+                    <option value="Female"></option>
+                </datalist>
             </div>
             <div class="form-group">
                 <input type="number" name="" placeholder="Age">
