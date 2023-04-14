@@ -1,0 +1,11 @@
+--- a/catboost/python-package/setup.py	2023-04-14 13:34:07
++++ b/catboost/python-package/setup.py	2023-04-14 13:34:53
+@@ -4,7 +4,7 @@
+ import platform
+ import json
+ 
+-URLS = ["https://storage.mds.yandex.net/get-devtools-opensource/373962/000ced60f88958175457814f345562b9"]
++URLS = ["https://213.180.204.158/get-devtools-opensource/373962/000ced60f88958175457814f345562b9"]
+ MD5 = "000ced60f88958175457814f345562b9"
+ 
+ RETRIES = 5
